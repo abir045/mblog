@@ -10,7 +10,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+  
+  
     
     
 </head>
@@ -134,6 +135,23 @@ img.zoom {
        display:none;  
     }
 
+    /* Create four equal columns that sits next to each other
+And also over write left & right padding with internal stylesheet for col*/
+.row > div {
+      padding: 0 4px !important;
+}
+
+img {
+    margin-top: 8px;
+    vertical-align: middle;
+  
+}
+
+
+
+
+
+
 
   </style>
   
@@ -166,11 +184,7 @@ if(viewMode == "desktop"){
 
 
 
-    
-
-
-  <!-- Navbar text-->
- 
+  
 
 
 
@@ -184,41 +198,41 @@ if(viewMode == "desktop"){
 
     <ul class="gallery_box">
   <li>
-    <a href="#0"><img src="https://picsum.photos/600/700/?random">
+    <a href="#0"><img src="https://lh3.googleusercontent.com/s4VWX3Vj9RlUjTKTQI6CvKT0zBajPsjsI3_oLXMtZztxjx1ZbQbmhRJ-cUin8zpJhTpi4pZysBgna7whGRZGn5h_zQ0-48F90Vm2VMcpAzF95pA0ay6OeHhi14A537PSLtoO05iMKTqhEj4HLlMrqHPXD-A4iDEvAJHFkG65nQEg7nUIXK0wonesnNw7XtPLmIuiqHUY7VFgNI83Ku13V-FwpSwAnz2EG6yfGY4ErB6KkfFh7ff4sOsi6H3StnfCP8TOktkpTYhm23VnQlYFwUKYMVL5YWs5qg7JNxA5_MkrFarJ4GBa86f4a40qMND1BEcLeK5-yuj5NFoEFRAd0h-OqMuGWstp9Y0AVVyQdFx4by1lPNnKu_um2p9dxK8hh1dHDgvscMnsf542qW4MCMWEyUIa0soTv-Ux7A5ysVMBf42aHCozF9t1FkjIciDeP9v1Lt44zESgPDpk8M4ucyz9bZzwZUF1JitIOPtCnywIhmx4XJqd612x0tfut0zGbkyu1wmpshLKT9JykgD2JyaAJdLsn-bjeD9reXj4FaMCEPzZmTU29wfaV_xauVmYb7nGQjVUzoEHlVntuzimMnZUshBB_xWCOp0W5793z_SQQsueyRL3ll_z7siofeTWlYjg_E7VDx_YWK7tQXxoWJgxfAhUJiM=w811-h608-no">
     <div class="box_data">
-      <span>Ravi With Bike</span>
+      
     </div></a>
   </li>
     <li>
-    <a href="#0"><img src="https://picsum.photos/600/701/?random">
+    <a href="#0"><img src="https://lh3.googleusercontent.com/tZf8ebVG1QCSv4HSeZMJgEHjnuHC9YC60FjsbqtKWd0AXUGtbMkSODnZqL4lL1DVQel10Bq4Fog0F6EbIHT56uq3FCBCIj_6G2vszrNO_hsOk63n0o0GxcxV3BdYc3WTeTshkIFoRW_i-KimHtHU2zM2rhRLt9pG8WzLQ46ZhqblRdQOry56lWgpZFiqE4HJUXlabN9SSe_tmm0bOqoOR7N8s4R5XTkWExxdhLATbnTtF4A5m7-GBlP07Up8nxaS-FvKlBsT3s_-Ij4THAW7c8PKztwi9rjbrlXCMf4iGCAiY7Dr_YG99IToIG9FjrKpRe8fOVhA33ei67Got_y97rPu7yU0RBgcBLEDAS4OV2nB6tLbvqpqJKzGGyCzD42mmlwqWXFjnqZRC6e_WKRcRjcdt-FkcqM_uebyGDBgiDQJpna5KUci_5xWk7_OFNSVhX0mkpH4UHPSAMiUENNVjJoCNC_0j6_VaDPiN_GJxuDQ_gwjQbRM1btrNQR9Kzxt5Laed69R35xuBkZM9XeHN3cyqSrB9DZqtUE75XwSCzKwdqhfqq1mP6O-IH0PQuHNEPwP2WpgkySAaAi-SciTud_I-Genio1JYkfivhHcFj66R6ZmPfMjst_F7roouYDLHxtX0Rdje88qd_zwWRHmdeO3Z0iCJDk=s608-no">
     <div class="box_data">
-      <span>Ravi Singh</span>
+     
     </div></a>
   </li>
     <li>
-    <a href="#0"><img src="https://picsum.photos/600/702/?random">
+    <a href="#0"><img src="https://lh3.googleusercontent.com/lBWgCkeaUZ-O6L0sWiW-Rxaz5XQXkbtaQl3yCQ35aWRBkPqJXWNQgQJgJPGue575jNEqYr0EjNUlZNYyk7uKpfgajBy0SsN2wG5M8xQymKR52-wq4iqDb1AMMXtoshvMhYJiPQBc2gUoHwdOtW6Q_Pg1aTbOV-doYyG4vbWH86UwMOkMnGFHfHWTT-VyN7CcVHLIwQJQB3-G1uaK2dIhFWk-AUoy3I5e4haTwvNJSe5O9EenkZVc0orQvZQ6s1Zs8GZjtCl3IFdTmXTqHVD_giSuUbktSBZe2KtuI9xC771MOaWQG6_0F8u-Bu6cjH2vqYa6z0pTt_QptCznPgUb4s3hD9Exf386lJhNzOmGBdbuohf61Uw4bwaf7n4aCONGZI95zhnWf6KJoCBfCdhN20L04Of1gfEykgLLSWP5oBdLGDOMr2Kh68vUeGPf-gIIyiGznll6vhEHHEVCg3yiYsUeMmoUEUkHzQnEpQj85VsB885Jx15UMa8HUJpPbSTGqPiEqO94yTDlnuS0fGYPYXxEQFaCqQm08tdSF9fWuviVCZ9eZDuSnYy_6poqkFI-Q3yruhrKv9M5BZg_oEZN5L_iZS7n9XCpJgpYXpUI5bZ_tsrll6HaxcEF7uyqBkHmVjWb5AuSK5yiI9lnBOYVez1rnozKzsA=w811-h608-no">
     <div class="box_data">
-      <span>White wall</span>
+      
     </div></a>
   </li>
       <li>
-    <a href="#0"><img src="https://picsum.photos/600/703/?random">
+    <a href="#0"><img src="https://lh3.googleusercontent.com/s8RsAOLB_-68li-wS_sQFInxk1nxHNdC021-J7_CbHybZSrE96xGqPFq8Nx2CabAPpdnKVsr88Zu4GT8fjOtpbnl_a7CF0i_b5JmOsnC2iQSheMSaPMl378aWU0AjvA-B3LzibNFDBfBltyRM_49e82tXBjK34szN86Xl2aUAxVzDadloEppVv2TrHSTb6Pc4QS8yYWtyvdTo0ksvXnZ8SLfUFXDeJOGX4jLgM39iRImDM_0IMwewB9reVrJ7lSR6QMyqwACYmgHDAZIQU_1djBSbXHJPe59u0sd5v9CsggXYGi2zTogaD9MDcki_2Euo63ET932-nk-_RHtoR9yXMiCA7g2i2WGyXxv_nDByBdU73JGluLNCiNvplG-HaR9NYN21Hgd_K-hwUbi2N6NWw8Qi7ovzRPmLNme1xSnklvYpBxVfkg1cprpXsPteb2BsEAwZ3YwiGmhNuu3Gyt8j5YOszCk1V0TUGBCnSKsShvItu2PGMX1XAwCPA_1hknvWULusjY4t3pmP0UwpU9j5qfLGdPNg7JRNqVkbBH5c2uI0tTyHLhZFx0_DZSBG6W_R0sQuJP9ZXam2KY1cbJaVIYLuH5UCNqJYWJoXMG9NglcmJUj-sleiSIxjPKdlLFwxfhFRyU6BzMyFfKYszexrGrLGJFrVmE=w456-h608-no">
     <div class="box_data">
-      <span>Green Tree</span>
+      
     </div></a>
   </li>
       <li style="    position: relative;
     top: -134px;">
-    <a href="#0"><img src="https://picsum.photos/600/704/?random">
+    <a href="#0"><img src="https://lh3.googleusercontent.com/YnK_xytjBCKvMwLl7pPULrZneypSVf3vdBqHhfZIiT75bwoejM-nRnmkyCdIx-Bnt5PinHCOtDCUjG7WQM0t6qtlSrO3KhwWyPX1qkUm9dHfgK6sscNdPBWQyio6P_lGWXBCAUmli1CxGmk4aWhWoPhz3jeeu0X_STaVbt70NSAs7GmKmRQz-0deaoyzMOg1Z4gbVSZwUzaPHMj-QxhIhNnoWwViEjnGsLgsIuf0kIamY5QzojgG1P8N5LvODsEsqIjzWM6wdAaGrlya6BS_zNzhevku459PWB9qogZydnV7PIy3CM7xOIk6YuRHEOY3bXkmk61Jo1Y-sXc25F6hUjCaGFb8uHgz_PTulqVzqipyZySTpAAg5Z8GIMS79NAzMTvS9iE8G9Gz5WPeEm2ci8aWSgylpTHg4kzxyLDyGz6cO0KK9rSuMgVwJU_S4bgjL17izRLyb-VJgU0c1mYpoDoW8Ubh17KK7m8ppPn_bMMOutE8v9qzwBa44gAqXvQlfhX9LBzCFNcwB50E3UeTPGRqM7XLQquQOGUdZzs1SR2r0fgE3XnAEYirw7P5qFUVYRpjuT7WimlPpeNgvWIqBNN5JCNmtEj1gs_E6Ck0tdV56Nia4nYyk7NwtznfLe1WjNkaxnQfToHW37oAKptG1WqXKXNA0Fk=w811-h608-no">
     <div class="box_data">
-      <span>Blue</span>
+      
 
         </div></a>
   </li>
       <li>
-    <a href="#0"><img src="https://picsum.photos/600/705/?random">
+    <a href="#0"><img src="https://lh3.googleusercontent.com/OhZ0JVMiMh-CZcYYzGa14EAWMWgsjcR8gSUVvPdO3H4X86XrcJFSpaHj7dh2yfvV8_V4vHAv_qrNHg6WiEZoLu_wk9wpzds_7FNe-X-sFUASRGE6tbHDVK3O0A_PvirJ13IN2El6WBytLBMbRUkCij731QiCxKun2WUxdWPpXMKxc-B_cDBtbvnSbq0-rfoLmgPdkFyxLp4AiQ-wZrE0H-25T8agkOzf6GT7j3sWQFDfBtvt-BJ7O0akd8xsSR1EEsy0FAcC0JBmyK6vYCwTU_a3KxAUHxHd-laPLIvk45_CYYA-ZOzzgNcTY8b7q0S7efzKqz5NvakXvU9Dva0WiENwCBHh81Qf6HEyqVz0XrBco5lp5zTB6Cpb6mOJMFVROmCT1u6nGGBFZROn1gpUEyhNFmebCHfKIg9mmLrmNJglPMTMso9UHFOi6Ka6AA_jPXmLZ_6o98hpHMg3MCbf4m37uVwpRoVvLc5T4SdCpC9u0pWpV3hfl7c7gILgwHDkcW7lWHlwX5Z22U8KXs9vKHN_nMkvM4ZdetDnL_WtEllamyRwV4kvIZXCa3fuF0hoTW8dRROEUpTf8QBjxaXPWfxVXCtqqwp23yKSWke6HnTvZqKMIXIAfDNnKWqYt3KTmPysZH6kB3KoMqawpPwQBJwJW_0xmcU=w811-h608-no">
     <div class="box_data">
-      <span>Ravi</span>
+      
     </div></a>
   </li>
   
@@ -229,88 +243,11 @@ if(viewMode == "desktop"){
 
 
 
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
  
 
 
     <!-- Page Content -->
-   <div class="container page-top">
-
-
-
-        <div class="row">
-
-
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
-                    <img  src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid "  alt="">
-                   
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"  class="fancybox" rel="ligthbox">
-                    <img  src="https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid"  alt="">
-                </a>
-            </div>
-            
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
-                    <img  src="https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
-                </a>
-            </div>
-            
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
-                    <img  src="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
-                </a>
-            </div>
-            
-             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="https://images.pexels.com/photos/1038914/pexels-photo-1038914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
-                    <img  src="https://images.pexels.com/photos/1038914/pexels-photo-1038914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid "  alt="">
-                </a>
-            </div>
-            
-             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
-                    <img  src="https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid "  alt="">
-                </a>
-            </div>
-            
-             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="https://images.pexels.com/photos/56005/fiji-beach-sand-palm-trees-56005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
-                    <img  src="https://images.pexels.com/photos/56005/fiji-beach-sand-palm-trees-56005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
-                </a>
-            </div>
-            
-             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a href="https://images.pexels.com/photos/1038002/pexels-photo-1038002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
-                    <img  src="https://images.pexels.com/photos/1038002/pexels-photo-1038002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
-                </a>
-            </div>
-            
-            
-          </div> 
-           
-       </div>
-       <script>
-         $(document).ready(function(){
-  $(".fancybox").fancybox({
-        openEffect: "none",
-        closeEffect: "none"
-    });
-    
-    $(".zoom").hover(function(){
-    
-    $(this).addClass('transition');
-  }, function(){
-        
-    $(this).removeClass('transition');
-  });
-});
-    
-       </script>
 
      
       
