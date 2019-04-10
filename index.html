@@ -93,9 +93,8 @@
 
 /* The expanding image container (positioning is needed to position the close button and the text) */
 .container {
-  position: relative;
+
   
-  display: none;
 }
 
 /* Expanding image text */
@@ -120,15 +119,23 @@
   box-sizing: border-box;
 }
 
-div.container {
-  text-align: left;
-  padding: 10px 20px;
+
+
+
+
+.inner{
+  ;
 }
 
-.dp { background-color:silver;
-       padding:4px;
+.inner img{
+  transition: all 1.5s ease;
 }
 
+
+.inner:hover img{
+
+  transform:scale(2);
+}
 
 
   </style>
@@ -193,13 +200,29 @@ div.container {
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="https://lh3.googleusercontent.com/tZf8ebVG1QCSv4HSeZMJgEHjnuHC9YC60FjsbqtKWd0AXUGtbMkSODnZqL4lL1DVQel10Bq4Fog0F6EbIHT56uq3FCBCIj_6G2vszrNO_hsOk63n0o0GxcxV3BdYc3WTeTshkIFoRW_i-KimHtHU2zM2rhRLt9pG8WzLQ46ZhqblRdQOry56lWgpZFiqE4HJUXlabN9SSe_tmm0bOqoOR7N8s4R5XTkWExxdhLATbnTtF4A5m7-GBlP07Up8nxaS-FvKlBsT3s_-Ij4THAW7c8PKztwi9rjbrlXCMf4iGCAiY7Dr_YG99IToIG9FjrKpRe8fOVhA33ei67Got_y97rPu7yU0RBgcBLEDAS4OV2nB6tLbvqpqJKzGGyCzD42mmlwqWXFjnqZRC6e_WKRcRjcdt-FkcqM_uebyGDBgiDQJpna5KUci_5xWk7_OFNSVhX0mkpH4UHPSAMiUENNVjJoCNC_0j6_VaDPiN_GJxuDQ_gwjQbRM1btrNQR9Kzxt5Laed69R35xuBkZM9XeHN3cyqSrB9DZqtUE75XwSCzKwdqhfqq1mP6O-IH0PQuHNEPwP2WpgkySAaAi-SciTud_I-Genio1JYkfivhHcFj66R6ZmPfMjst_F7roouYDLHxtX0Rdje88qd_zwWRHmdeO3Z0iCJDk=s608-no" alt="First slide">
+      <img class="d-block w-100" src="https://lh3.googleusercontent.com/_oPf2u_PYhavo039_sCLXqvLyuZAnKWQly9PwqsWpo_iDxSjVB-IUfdXeWqom0QqrFf8b-ten0PEmP-UVt3EI8tGUxsWIjZy5jKqG42ddSmihT5DT1TsYPoQkq0zJaWLh72XvrAXiIuAzIEVT0RM_3hsZn6Gu88REQvRqT3wH18Pp4G48Z8zCsQ5km_KQa3jWgUjWr8YnnMZCaVBjkPDJbMZQXvC6yFEHI7Ay177HIue7hFnTgaxaGUJZ64KnneguiWRSJ98y6eBabwdpbH7goydoM4AVzaufCB2wxigiOb12-FHS-f8-v-dNrozp4a8rLzcHpnrWeuHMsmag6acLkyj04PO4e3dXg_HWxoc6mdicXrBsfha_6J4BRJMcNFdKOzK9pC4PzBVnb-KaVymp1eY3LFZcd_939RPITt68-8-b1i5ey6LRpNxB5Bqx1jPBorrQx5E80JwoV9AKVo6gnLtuiYqBNvkSYzUS7fsy6duj3FHojs_RnBxJigVD9_q0aYt4GIUNZ-KZim8_rLjtpt6KKpDJYNm3mDQMngo0voHIn3SxhCjBVY9PBCjjNnDUSero4Xmp28Jiq3V5r27anay7GQO7k97Fmni0gOzBxY--W4IGqPpRs1dRkUhzR0Hd8tEo4nV9Cwkk_G7HFX6ySVcFnH11qo=w811-h608-no" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="https://lh3.googleusercontent.com/lBWgCkeaUZ-O6L0sWiW-Rxaz5XQXkbtaQl3yCQ35aWRBkPqJXWNQgQJgJPGue575jNEqYr0EjNUlZNYyk7uKpfgajBy0SsN2wG5M8xQymKR52-wq4iqDb1AMMXtoshvMhYJiPQBc2gUoHwdOtW6Q_Pg1aTbOV-doYyG4vbWH86UwMOkMnGFHfHWTT-VyN7CcVHLIwQJQB3-G1uaK2dIhFWk-AUoy3I5e4haTwvNJSe5O9EenkZVc0orQvZQ6s1Zs8GZjtCl3IFdTmXTqHVD_giSuUbktSBZe2KtuI9xC771MOaWQG6_0F8u-Bu6cjH2vqYa6z0pTt_QptCznPgUb4s3hD9Exf386lJhNzOmGBdbuohf61Uw4bwaf7n4aCONGZI95zhnWf6KJoCBfCdhN20L04Of1gfEykgLLSWP5oBdLGDOMr2Kh68vUeGPf-gIIyiGznll6vhEHHEVCg3yiYsUeMmoUEUkHzQnEpQj85VsB885Jx15UMa8HUJpPbSTGqPiEqO94yTDlnuS0fGYPYXxEQFaCqQm08tdSF9fWuviVCZ9eZDuSnYy_6poqkFI-Q3yruhrKv9M5BZg_oEZN5L_iZS7n9XCpJgpYXpUI5bZ_tsrll6HaxcEF7uyqBkHmVjWb5AuSK5yiI9lnBOYVez1rnozKzsA=w811-h608-no" alt="Second slide">
+      <img class="d-block w-100" src="https://lh3.googleusercontent.com/WnNjH0qM-yGMikB_fu1n07-09-80Z26mMlSXF_zg4Kpq0yK-Az_q9L-AAQnnua3nCtTT5GQGnxGIe7zUkp_36Zi5nH4sP1TAHTym9mlZ3gne-LBs6KbN1eiFhSxgP4JvFvl9KZFszORb0eTAEnl_pq1aBTOWYNUa36KXrht_V_uxXtqP1WKbYUcHGNslIK5zf1Jtc8JRKmF7RHU3duyNshoFA_bB1LFLTGh3UMEzMb2GEuoE_C26An-n84ejYRxGPHpVcNZbNvz1jLFWai0t5RD4ejj1-8TM5ET5dVRjtYGc_72ePxCh09pO2Z7kcADW1pLfCXFCL0DG_t3X0u36fX5_Bse2lPA5yYDPh6T0-k-n66HJbLGTm-qrY1prZa1EnyH7Jo4WKtjyOrgu4eCpoux4241ME9bem8ECp6nYm4sdOd63M1MNEcTFA8MqxsmGX0gZbMwMcm13YXA0mIND6zgyVCwBOtM-Zoa4H4psjpf_WYJN_Nk92PECrQJy_rkYOfMVeCBtZF9yGLLB21VRtTFOHwrAqN9uL_uJ07LVeo-CaMXGrArAphxddQEoJIYQbfN_zZvAvDU7xYWLGOHmNWBBCGZQ4Be4moHi668bsFDyB1NcnsoVd7DepLzoaG86rsLbarc7YalBp_2OijHIP5IsVoAPx1c=w811-h608-no" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="https://lh3.googleusercontent.com/s8RsAOLB_-68li-wS_sQFInxk1nxHNdC021-J7_CbHybZSrE96xGqPFq8Nx2CabAPpdnKVsr88Zu4GT8fjOtpbnl_a7CF0i_b5JmOsnC2iQSheMSaPMl378aWU0AjvA-B3LzibNFDBfBltyRM_49e82tXBjK34szN86Xl2aUAxVzDadloEppVv2TrHSTb6Pc4QS8yYWtyvdTo0ksvXnZ8SLfUFXDeJOGX4jLgM39iRImDM_0IMwewB9reVrJ7lSR6QMyqwACYmgHDAZIQU_1djBSbXHJPe59u0sd5v9CsggXYGi2zTogaD9MDcki_2Euo63ET932-nk-_RHtoR9yXMiCA7g2i2WGyXxv_nDByBdU73JGluLNCiNvplG-HaR9NYN21Hgd_K-hwUbi2N6NWw8Qi7ovzRPmLNme1xSnklvYpBxVfkg1cprpXsPteb2BsEAwZ3YwiGmhNuu3Gyt8j5YOszCk1V0TUGBCnSKsShvItu2PGMX1XAwCPA_1hknvWULusjY4t3pmP0UwpU9j5qfLGdPNg7JRNqVkbBH5c2uI0tTyHLhZFx0_DZSBG6W_R0sQuJP9ZXam2KY1cbJaVIYLuH5UCNqJYWJoXMG9NglcmJUj-sleiSIxjPKdlLFwxfhFRyU6BzMyFfKYszexrGrLGJFrVmE=w456-h608-no" alt="Third slide">
+      <img class="d-block w-100" src="https://lh3.googleusercontent.com/B-CsWXcv6_V_L4WbJleUgCeR5uAQ2V4GCDtCIh2b-VjBjm1QpjFqR5-SvhUZ6wkcz3e4PdTXp0G8Wrn_So7jEuCqoMrBD4AXSL6XDBiXdVd6nDYKPX5KkmgsNpDwKF6F-xaPSJUnAqUaf952FRis5iVWe_pl-N-5eEPOD2bydAodFjo_-N1UgBebNyCSjXJpBWffc9NR2v7wJea57owU9Rah3NnPyF5BOGxCjrTwl_emsocgPDAYheQs-sJCrq7oZ8QrOyAKjKbzC4dTvB1NUHaDnQDb06u9oR8ubFENckdzbw_cNgHMiL2FiBHgM1pYRI0VhUQASZQ3gGUheOWQet6G_vupkqzAzqyaQHdI28rcpMkct7tQPNf4i-daIEPZgd6DRf_XLSCL231JEAh8Hi1ob-ryMuepM1UCn3WqWuezThQks4H2l5wV1QfGBbnA0u8A-r-SvnvksWQ25GsCgalVXPRkp67AOblDCWa_gR1DiJeV8Gx9WVYDioXG9D-soUInaZMGp_cbJ3sobpCYZjjdXah4bVf909d-HwUjJCbK7FKpjkd2a3OPthjhQScPCl9x6g9LoIu8OdoVoATGOQH-90hqV6lkVzBE3o74JGo3vhX659SrSaHtrMeUA6LEQ6-aTOyygttW8pxQF0dw4GR7ZKquZ-M=w811-h608-no" alt="Third slide">
+    </div>
+
+
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://lh3.googleusercontent.com/h5PWNObAy0kwUsdVS1vEsGmcDMzKevP2Cqojl6_MXoxea25qRMfUwDvbHcz0eRiqoxtiJW9ZFFaaqYGuq_zxQ_biwhoBqu270jOodMarwI9-nwSHYwCw2ywoWbz-jRlw-qU3YyoH8z1GyS57vLtC4lX3zyWeMXj0s7mAA38V19LJYhhgOeAUlzcWMUt2Q31iYC1z6-tZMzTwWVpgqFVEL7h01nlh1lpShomz35JPu64G6vzBfkV6B_wc5Y-sC73dVIPdetm9zpq66sJRLh6W2cYHPDudTRdeQnMuiQ5TGn0xyawM8yoLTi1mbBHAIIKDeKZYm3t0874y36s54plIwrVWPDNnVvMduygqsJJMn-ZWCO8XRv0IPoVJFFr6lEdxdbCLdqUktgArxlK9yG5q4GshUL9bis5Gdvodg8pD56O4enQA3Q3ja-8FDtgeVkUzyFYDZI4Mwt2Bg6nHleLz7j7dDbe_XZTZjIaFLXequYJZdgRQgyBqKkoG2HTPPQCMEFI7AjyU8uOIbZvTAVN31fqdZog-g8wqFNT8RlJpQdTFjw4xsapJjGcRKgDDXTZfB2bCuTU9FhIhQyyezhdZhd5j3rBbTAJonrqBeGmtlUH4rkQ_Ib-tv3yyJ8nZktDTo0XPY-_TA_GICEBGjJKs-JDLejv7SSA=w811-h608-no" alt="Third slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://lh3.googleusercontent.com/NN4fc_FXOCwWmuh0YKGbVPz7gApTW3r7cXMT3HPuUl3S_Bb-1cDoKfL5mZfyzryXgUQFVmtQTbSA3vIbH2JSMCXzVv8WIf8HOMzmSR7l0zC5gU-ispgeylybulWzDYIqzd5QoCOrUbIeOIlcYH41m78GoI-SZCXw8x2jlteezqAI-Jz0pS6hi1IlSqhjm99RTXVj5zKo639vnng0mCmpP3Q7Jm7eHvjPRZASSrZFR9LhH6EreiKdczwx8lqGlRQyTjQWg3UhH9oCD6751YAFw3rMWYmB7S6moigCxvHEc0S86F68O9jMEi8A4slJCXNsr8WJy3luDAth8UgBX8qDtE39VC5esA9EhXHc7D8jhP9UHPTjVXy-HIqqV9_9xf1LR60y8_p9EXt_9gm9MKhgTUbhZJSK3wHDyMglYabBUsqBWt-9127qWS4sBH6Ef_dSVRnM45nqqGxCq1Ox4d_oidX2ALNzp5iF-SspG6rPLxXHu4kmLaWebekquMcTAdtyiPScICl9e8-ePwzfwL1XlfzBdl_QTHraZ6gWacldkSUgEjM9tKKRaijcZOz6NXPVE26z4ND3Tajfsy3YxdOYwI62g0feW-X6xzSMJK9ZnuZin6xYvzLcrtfp1V4DdMZufwjnJ2w8nXvVXhxQJ0L2aF4HgYxTG6k=w456-h608-no" alt="Third slide">
+    </div>
+
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://lh3.googleusercontent.com/PhXYhpixbQT2lNe_IImvpP9g-Q6IDiYuHP6gV_Z2MWx46na-n5y-rPhdsDdTv-WqdHtYHivBu6Tv6AJ9swTFYsICQsGTrSENe7E1pQFGQ_J6dXiUtTDclkz4Qy1SxLWJrlWJi-Soe5tKOBAHCV6E5dclXQHZYs7EfVnVone6Fg23jk9JhTsvQsHUbDeeZ3oUXvg0Ut4X5Dtaq5mJ03S3tblP2tssZFeu6-KsaBxcltENXn_ve5tB4155HWL5-umlnMS6HZWjPWUp4doelVxIl2X5z_S2IohCov8XY3MGXKJfcif6SLBDEQPE8ls5Ar-5oicQ9s8K0E1bM9W-AYmqt8b216ZmgHNYtgbn9bP43cmDqfCB1oohjjHCyE0gexE042-yhYPqVhBvfcFzgNgFieXvBCVYczlrRGNoVG8xgMYRQn6Ymd8HE8OVgG3Wl_EqQlkF_Q8Co4X9rrMlDQEH9bpmRlaxR9yzcUcNxlJYGAqRenFZodr7WOFCYJPU3qs9ABDOp1GDoyKHUGOPIsXqEVxTiUh21mWh_PS8GmHQVuJFR-KCy-uPnbMI3ZwLbDQ6koG-GWBzXsbFcpQWGVLowS3MIENh4qSYWEcH2obeCZrNW_pIjepwsZeO5SZuOPxUfQXC1RN7F5apcztMA8SLNwozc6SOifs=w811-h608-no" alt="Third slide">
+    </div>
+
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://lh3.googleusercontent.com/V8zpiBr3fYtl-pThPg6oSYjvPU-G_8qT3zBLfan1VN-Z2Nx7R5XvEC8ZaSs-kdmnQLlGBHrkM7G78yYVJYZx09l4G6gwAVLSnB4mNb1V9G6LjopECZZSGMg700ePrQsqG_3Ojg4nrKx6rlg5DQn-O0Z0m4XAFQPb6aEmGzw2v7Ioigjc-IepIPprV5z0OnAA4LCcLoTzzUuLgXzyTXyfaIjSbHfvZJbeEIs49JokoU0jlhZwlupPJp6WSnriMVGZuVmdOiCEa_10dtCDi1ARdarYJ0fJte5APCosLZ819GLbBvmTyNRB7r4MhUrKfVYmBDH4K1hNubu_yklKoCGtwbN-ArsjE2GAmFWrsz2lJU5m75vCwLdg2NChc_LPeZ9nfnwRi4lzk3P-q7Hpv_6BGhVKe4F3DCWeeMXTKE1utLjlG_9V_I0hcq9A-l00_-BX5eN6mmbNQHYutgisBWiH7AonGyBV2rYFs3GS3o9jZLp6e8oHGsH1VfC49gOFnGui17NCKvxdF-2H72iQii1P1Ejpu68rcwekpKG38j57YMtUkBzONxPU7Loh8OGxRVdf3sZbwUEtZUSXyUVIyTDwtk3sGbgOFtm6sU45_LSrGnkdI04IfoRcQLhVwXXwZVaqJ67L0gOeLuUEFDRzPGzNKU7nEzWqWMU=w811-h608-no" alt="Third slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -221,24 +244,36 @@ div.container {
 
 </div>
 
-<div class="card-columns">
+<!--<div class="card-columns">-->
 <!--  <div class="card-group">-->
  <!-- <div class="card card-accent-primary mb-3" style="max-width: 40rem;">-->
-    
-    <div class="card border-secondary mb-3" style="max-width: 40rem;">
+ 
+   <div class="card-columns">
+   
+  <div class="col-md-4">
+      <div class="card shadow" width="20rem">
 <!--<div class="card" style="width:500px">-->
-  <div class="card bg-primary" >
-  <img class="card-img-top" src="https://lh3.googleusercontent.com/s4VWX3Vj9RlUjTKTQI6CvKT0zBajPsjsI3_oLXMtZztxjx1ZbQbmhRJ-cUin8zpJhTpi4pZysBgna7whGRZGn5h_zQ0-48F90Vm2VMcpAzF95pA0ay6OeHhi14A537PSLtoO05iMKTqhEj4HLlMrqHPXD-A4iDEvAJHFkG65nQEg7nUIXK0wonesnNw7XtPLmIuiqHUY7VFgNI83Ku13V-FwpSwAnz2EG6yfGY4ErB6KkfFh7ff4sOsi6H3StnfCP8TOktkpTYhm23VnQlYFwUKYMVL5YWs5qg7JNxA5_MkrFarJ4GBa86f4a40qMND1BEcLeK5-yuj5NFoEFRAd0h-OqMuGWstp9Y0AVVyQdFx4by1lPNnKu_um2p9dxK8hh1dHDgvscMnsf542qW4MCMWEyUIa0soTv-Ux7A5ysVMBf42aHCozF9t1FkjIciDeP9v1Lt44zESgPDpk8M4ucyz9bZzwZUF1JitIOPtCnywIhmx4XJqd612x0tfut0zGbkyu1wmpshLKT9JykgD2JyaAJdLsn-bjeD9reXj4FaMCEPzZmTU29wfaV_xauVmYb7nGQjVUzoEHlVntuzimMnZUshBB_xWCOp0W5793z_SQQsueyRL3ll_z7siofeTWlYjg_E7VDx_YWK7tQXxoWJgxfAhUJiM=w811-h608-no" alt="Card image">
-  <div class="card-img-overlay">
+  <div class="card bg-light" >
+
+  <div class="inner"> 
+  <img class="card-img-top" src="https://lh3.googleusercontent.com/s4VWX3Vj9RlUjTKTQI6CvKT0zBajPsjsI3_oLXMtZztxjx1ZbQbmhRJ-cUin8zpJhTpi4pZysBgna7whGRZGn5h_zQ0-48F90Vm2VMcpAzF95pA0ay6OeHhi14A537PSLtoO05iMKTqhEj4HLlMrqHPXD-A4iDEvAJHFkG65nQEg7nUIXK0wonesnNw7XtPLmIuiqHUY7VFgNI83Ku13V-FwpSwAnz2EG6yfGY4ErB6KkfFh7ff4sOsi6H3StnfCP8TOktkpTYhm23VnQlYFwUKYMVL5YWs5qg7JNxA5_MkrFarJ4GBa86f4a40qMND1BEcLeK5-yuj5NFoEFRAd0h-OqMuGWstp9Y0AVVyQdFx4by1lPNnKu_um2p9dxK8hh1dHDgvscMnsf542qW4MCMWEyUIa0soTv-Ux7A5ysVMBf42aHCozF9t1FkjIciDeP9v1Lt44zESgPDpk8M4ucyz9bZzwZUF1JitIOPtCnywIhmx4XJqd612x0tfut0zGbkyu1wmpshLKT9JykgD2JyaAJdLsn-bjeD9reXj4FaMCEPzZmTU29wfaV_xauVmYb7nGQjVUzoEHlVntuzimMnZUshBB_xWCOp0W5793z_SQQsueyRL3ll_z7siofeTWlYjg_E7VDx_YWK7tQXxoWJgxfAhUJiM=w811-h608-no" alt="Card image" style="width: 400px">
+   </div>
+  <!--<div class="card-img-overlay">-->
+    
     
     </div>
   </div>
 </div>
 
-<div class="card card-accent-primary mb-3" style="max-width: 40rem;">
-<div class="card bg-primary" >
-  <img class="card-img-top" src="https://lh3.googleusercontent.com/tZf8ebVG1QCSv4HSeZMJgEHjnuHC9YC60FjsbqtKWd0AXUGtbMkSODnZqL4lL1DVQel10Bq4Fog0F6EbIHT56uq3FCBCIj_6G2vszrNO_hsOk63n0o0GxcxV3BdYc3WTeTshkIFoRW_i-KimHtHU2zM2rhRLt9pG8WzLQ46ZhqblRdQOry56lWgpZFiqE4HJUXlabN9SSe_tmm0bOqoOR7N8s4R5XTkWExxdhLATbnTtF4A5m7-GBlP07Up8nxaS-FvKlBsT3s_-Ij4THAW7c8PKztwi9rjbrlXCMf4iGCAiY7Dr_YG99IToIG9FjrKpRe8fOVhA33ei67Got_y97rPu7yU0RBgcBLEDAS4OV2nB6tLbvqpqJKzGGyCzD42mmlwqWXFjnqZRC6e_WKRcRjcdt-FkcqM_uebyGDBgiDQJpna5KUci_5xWk7_OFNSVhX0mkpH4UHPSAMiUENNVjJoCNC_0j6_VaDPiN_GJxuDQ_gwjQbRM1btrNQR9Kzxt5Laed69R35xuBkZM9XeHN3cyqSrB9DZqtUE75XwSCzKwdqhfqq1mP6O-IH0PQuHNEPwP2WpgkySAaAi-SciTud_I-Genio1JYkfivhHcFj66R6ZmPfMjst_F7roouYDLHxtX0Rdje88qd_zwWRHmdeO3Z0iCJDk=s608-no" alt="Card image">
-  <div class="card-img-overlay">
+
+
+<div class="col-md-4">
+<div class="card shadow" width="20rem">
+<div class="card bg-light" >
+  <div class="inner"> 
+  <img class="card-img-top" src="https://lh3.googleusercontent.com/tZf8ebVG1QCSv4HSeZMJgEHjnuHC9YC60FjsbqtKWd0AXUGtbMkSODnZqL4lL1DVQel10Bq4Fog0F6EbIHT56uq3FCBCIj_6G2vszrNO_hsOk63n0o0GxcxV3BdYc3WTeTshkIFoRW_i-KimHtHU2zM2rhRLt9pG8WzLQ46ZhqblRdQOry56lWgpZFiqE4HJUXlabN9SSe_tmm0bOqoOR7N8s4R5XTkWExxdhLATbnTtF4A5m7-GBlP07Up8nxaS-FvKlBsT3s_-Ij4THAW7c8PKztwi9rjbrlXCMf4iGCAiY7Dr_YG99IToIG9FjrKpRe8fOVhA33ei67Got_y97rPu7yU0RBgcBLEDAS4OV2nB6tLbvqpqJKzGGyCzD42mmlwqWXFjnqZRC6e_WKRcRjcdt-FkcqM_uebyGDBgiDQJpna5KUci_5xWk7_OFNSVhX0mkpH4UHPSAMiUENNVjJoCNC_0j6_VaDPiN_GJxuDQ_gwjQbRM1btrNQR9Kzxt5Laed69R35xuBkZM9XeHN3cyqSrB9DZqtUE75XwSCzKwdqhfqq1mP6O-IH0PQuHNEPwP2WpgkySAaAi-SciTud_I-Genio1JYkfivhHcFj66R6ZmPfMjst_F7roouYDLHxtX0Rdje88qd_zwWRHmdeO3Z0iCJDk=s608-no" alt="Card image"  style="width: 400px">
+  </div>
+  <!--<div class="card-img-overlay">-->
    
     </div>
   </div>
@@ -246,17 +281,25 @@ div.container {
 
 
 
+<div class="col-md-4">
 <!--<div class="card" style="height:500px">-->
-  <div class="card card-accent-primary mb-3" style="max-width: 40rem;">
-  <div class="card bg-primary" >
-  <img class="card-img-top" src="https://lh3.googleusercontent.com/bf46ZGCa6JEIKR9EtiIk_tD2fGlWIG2nQAlyKnEx6x5mb9TxSatyEXEA2O57eYFk-O_JcaFvBu7BhaWVHJVelD9H3X1xPOcCedRdq0KQ4iPybN9ps1WWRm1WnOqPt9EoL9vsl5jA_y4Mu8eYu_koLJgyzC9EFSMCLs8ZXE54yhYYEmNoK_DrXj7rGuCNgv9ECYPvqcRInqkhj3ayz054dHyC9lSDvMV1WIjAd1EF-F1hhFC090xnA7YaJygOfsecuCGN1-bcHo8AmdSJKy7Ssrl7f6Pw884oqQuNwtCaBSBt6YnzWCvz-FUoCmmHfOlBb5L_WlHmTehDrOVZxTWfv9BTLgvNuwHpmza-QG9uA_3JN7pB5dJ5Cvwgb6tSUV3EcVB4NHyew3-m83p8F4qvx0Xiq6kp7Mzgrw5rnBBK8msdS8JXxOJNeiqMDdY2001WpzyEP1gncLaPzpOkKMbi_2ZKWMXpJYBt8aoXFvuLFxQwaV4tvsEFw-i6pGX6QKubgr96J2x5G7dxI4RFhX8qZxhuIh13_HLjK3L5KbUhBvYYZyzpFwZVLZC2Or53QK_kRILnF-BHi8QX7S8NKLZlGSHPzmdMgxgPWzvyWtZ8a2B8CbLyESHs54HS6rSKZdrfW59b5rbenHodk85SVS-F8iqUpDFl7-k=w912-h608-no" alt="Card image">
-  <div class="card-img-overlay">
+  <div class="card shadow" width="20rem">
+  <div class="card bg-light" >
+    <div class="inner"> 
+  <img class="card-img-top" src="https://lh3.googleusercontent.com/bf46ZGCa6JEIKR9EtiIk_tD2fGlWIG2nQAlyKnEx6x5mb9TxSatyEXEA2O57eYFk-O_JcaFvBu7BhaWVHJVelD9H3X1xPOcCedRdq0KQ4iPybN9ps1WWRm1WnOqPt9EoL9vsl5jA_y4Mu8eYu_koLJgyzC9EFSMCLs8ZXE54yhYYEmNoK_DrXj7rGuCNgv9ECYPvqcRInqkhj3ayz054dHyC9lSDvMV1WIjAd1EF-F1hhFC090xnA7YaJygOfsecuCGN1-bcHo8AmdSJKy7Ssrl7f6Pw884oqQuNwtCaBSBt6YnzWCvz-FUoCmmHfOlBb5L_WlHmTehDrOVZxTWfv9BTLgvNuwHpmza-QG9uA_3JN7pB5dJ5Cvwgb6tSUV3EcVB4NHyew3-m83p8F4qvx0Xiq6kp7Mzgrw5rnBBK8msdS8JXxOJNeiqMDdY2001WpzyEP1gncLaPzpOkKMbi_2ZKWMXpJYBt8aoXFvuLFxQwaV4tvsEFw-i6pGX6QKubgr96J2x5G7dxI4RFhX8qZxhuIh13_HLjK3L5KbUhBvYYZyzpFwZVLZC2Or53QK_kRILnF-BHi8QX7S8NKLZlGSHPzmdMgxgPWzvyWtZ8a2B8CbLyESHs54HS6rSKZdrfW59b5rbenHodk85SVS-F8iqUpDFl7-k=w912-h608-no" alt="Card image"  style="width: 400px" >
+  </div>
+
+ <!-- <div class="card-img-overlay">-->
   
     
-   </div>
+   
     </div>
   </div>
 </div>
+</div>
+
+</div>
+
 
 
 
@@ -269,40 +312,56 @@ div.container {
         <h5> Studying at University of Agder, grimstad</h5>
         <div>
         <p> So now after the first semester, I have made some friends and started to enjoy the study and dorm life!!. That selfie in the middle was from my birthday party.</p>
-        <div class="row">
-        <div class="column">  
-        <img class="dp" src="https://lh3.googleusercontent.com/I6DksiacVIRoFZVW9g9NE2Tozqci4QaFbILjKG7MC4lfWk6kS8BF3YWqNx_4oaQRL7M3x5nYVWYmwWiHshfH4LXLNMa8yxAS_jVR9C9RPljWY0bFm6GBk7Lb1B3G9x3h86_KfU6DsDibTa-my6lyu5E0e9NO4nPFJqN9j2owdO99xw-hvFjZRFur52uVsZHP6JkA7elcJqRLiG-gQMQ-dYqFa1phk7KUVDy-TNFuzCPlKB41HxZoTGjq05RBP5S1K3Kaidkre0DQ-BMsMt22xybpg2dteu-0wjjgShXuaQPAhMiHC4t-b-4WWnPTcnC9ZN4QBWCalr_c3bYoxzpRS_d_DAMblNdnQ18zhfr3kWlwh9TsVuIC8hAXpYNtTHrsNxVgMj8vxuapw8x3KDQaGDO8YEYjGQgsBctPDOf3DypXUiX-fVhgxvpiu2bZrOVgQTK7heg5yYW8PJqcNwQbF8ksldE0RjyQKRV3fuLBHuU3v5Xc9RykI2JKOUbnXC9Two7GMQpkx3xgW2DHAX3vY7FjzvSbyfXnAgSgdS9piiWOfj-2suPlbRMFfIoRalh2H3uTM6hpEVJ7SiWeBk-ieLauPEkFpd5twtjuYAc548U9X-DegpIq5GAvq-BAsrZ7AC4jBei4ZJlOxHq8d_2D_Zzt26tWCfw=w811-h608-no" width="400" onclick="myFunction(this);">
+        
+        
+<!--  <div class="card-group">-->
+ <!-- <div class="card card-accent-primary mb-3" style="max-width: 40rem;">-->
+    <div class="card-group">
+    <!--<div class="card border-secondary mb-3" style="max-width: 40rem;">-->
+<!--<div class="card" style="width:500px">-->
+  <div class="card bg-light" >
+    
+  <img class="card-img-top" src="https://lh3.googleusercontent.com/s4VWX3Vj9RlUjTKTQI6CvKT0zBajPsjsI3_oLXMtZztxjx1ZbQbmhRJ-cUin8zpJhTpi4pZysBgna7whGRZGn5h_zQ0-48F90Vm2VMcpAzF95pA0ay6OeHhi14A537PSLtoO05iMKTqhEj4HLlMrqHPXD-A4iDEvAJHFkG65nQEg7nUIXK0wonesnNw7XtPLmIuiqHUY7VFgNI83Ku13V-FwpSwAnz2EG6yfGY4ErB6KkfFh7ff4sOsi6H3StnfCP8TOktkpTYhm23VnQlYFwUKYMVL5YWs5qg7JNxA5_MkrFarJ4GBa86f4a40qMND1BEcLeK5-yuj5NFoEFRAd0h-OqMuGWstp9Y0AVVyQdFx4by1lPNnKu_um2p9dxK8hh1dHDgvscMnsf542qW4MCMWEyUIa0soTv-Ux7A5ysVMBf42aHCozF9t1FkjIciDeP9v1Lt44zESgPDpk8M4ucyz9bZzwZUF1JitIOPtCnywIhmx4XJqd612x0tfut0zGbkyu1wmpshLKT9JykgD2JyaAJdLsn-bjeD9reXj4FaMCEPzZmTU29wfaV_xauVmYb7nGQjVUzoEHlVntuzimMnZUshBB_xWCOp0W5793z_SQQsueyRL3ll_z7siofeTWlYjg_E7VDx_YWK7tQXxoWJgxfAhUJiM=w811-h608-no" alt="Card image">
+  <div class="card-img-overlay">
+    
     </div>
-        <div class="column">
-        <img class="dp" src="https://lh3.googleusercontent.com/lBWgCkeaUZ-O6L0sWiW-Rxaz5XQXkbtaQl3yCQ35aWRBkPqJXWNQgQJgJPGue575jNEqYr0EjNUlZNYyk7uKpfgajBy0SsN2wG5M8xQymKR52-wq4iqDb1AMMXtoshvMhYJiPQBc2gUoHwdOtW6Q_Pg1aTbOV-doYyG4vbWH86UwMOkMnGFHfHWTT-VyN7CcVHLIwQJQB3-G1uaK2dIhFWk-AUoy3I5e4haTwvNJSe5O9EenkZVc0orQvZQ6s1Zs8GZjtCl3IFdTmXTqHVD_giSuUbktSBZe2KtuI9xC771MOaWQG6_0F8u-Bu6cjH2vqYa6z0pTt_QptCznPgUb4s3hD9Exf386lJhNzOmGBdbuohf61Uw4bwaf7n4aCONGZI95zhnWf6KJoCBfCdhN20L04Of1gfEykgLLSWP5oBdLGDOMr2Kh68vUeGPf-gIIyiGznll6vhEHHEVCg3yiYsUeMmoUEUkHzQnEpQj85VsB885Jx15UMa8HUJpPbSTGqPiEqO94yTDlnuS0fGYPYXxEQFaCqQm08tdSF9fWuviVCZ9eZDuSnYy_6poqkFI-Q3yruhrKv9M5BZg_oEZN5L_iZS7n9XCpJgpYXpUI5bZ_tsrll6HaxcEF7uyqBkHmVjWb5AuSK5yiI9lnBOYVez1rnozKzsA=w811-h608-no" width="400"
-         onclick="myFunction(this);">
-     </div>
-       <div class="column">
-        <img class="dp" src="https://lh3.googleusercontent.com/s8RsAOLB_-68li-wS_sQFInxk1nxHNdC021-J7_CbHybZSrE96xGqPFq8Nx2CabAPpdnKVsr88Zu4GT8fjOtpbnl_a7CF0i_b5JmOsnC2iQSheMSaPMl378aWU0AjvA-B3LzibNFDBfBltyRM_49e82tXBjK34szN86Xl2aUAxVzDadloEppVv2TrHSTb6Pc4QS8yYWtyvdTo0ksvXnZ8SLfUFXDeJOGX4jLgM39iRImDM_0IMwewB9reVrJ7lSR6QMyqwACYmgHDAZIQU_1djBSbXHJPe59u0sd5v9CsggXYGi2zTogaD9MDcki_2Euo63ET932-nk-_RHtoR9yXMiCA7g2i2WGyXxv_nDByBdU73JGluLNCiNvplG-HaR9NYN21Hgd_K-hwUbi2N6NWw8Qi7ovzRPmLNme1xSnklvYpBxVfkg1cprpXsPteb2BsEAwZ3YwiGmhNuu3Gyt8j5YOszCk1V0TUGBCnSKsShvItu2PGMX1XAwCPA_1hknvWULusjY4t3pmP0UwpU9j5qfLGdPNg7JRNqVkbBH5c2uI0tTyHLhZFx0_DZSBG6W_R0sQuJP9ZXam2KY1cbJaVIYLuH5UCNqJYWJoXMG9NglcmJUj-sleiSIxjPKdlLFwxfhFRyU6BzMyFfKYszexrGrLGJFrVmE=w456-h608-no" width="300" height="300" onclick="myFunction(this);">
-    </div> 
+  </div>
 
-  </div>  
+<!--<div class="card border-secondary mb-3" style="max-width: 40rem;">-->
+<!--<div class="card card-accent-primary mb-3" style="max-width: 40rem;">-->
+<div class="card bg-light" >
+  
+  <img class="card-img-top" src="https://lh3.googleusercontent.com/lBWgCkeaUZ-O6L0sWiW-Rxaz5XQXkbtaQl3yCQ35aWRBkPqJXWNQgQJgJPGue575jNEqYr0EjNUlZNYyk7uKpfgajBy0SsN2wG5M8xQymKR52-wq4iqDb1AMMXtoshvMhYJiPQBc2gUoHwdOtW6Q_Pg1aTbOV-doYyG4vbWH86UwMOkMnGFHfHWTT-VyN7CcVHLIwQJQB3-G1uaK2dIhFWk-AUoy3I5e4haTwvNJSe5O9EenkZVc0orQvZQ6s1Zs8GZjtCl3IFdTmXTqHVD_giSuUbktSBZe2KtuI9xC771MOaWQG6_0F8u-Bu6cjH2vqYa6z0pTt_QptCznPgUb4s3hD9Exf386lJhNzOmGBdbuohf61Uw4bwaf7n4aCONGZI95zhnWf6KJoCBfCdhN20L04Of1gfEykgLLSWP5oBdLGDOMr2Kh68vUeGPf-gIIyiGznll6vhEHHEVCg3yiYsUeMmoUEUkHzQnEpQj85VsB885Jx15UMa8HUJpPbSTGqPiEqO94yTDlnuS0fGYPYXxEQFaCqQm08tdSF9fWuviVCZ9eZDuSnYy_6poqkFI-Q3yruhrKv9M5BZg_oEZN5L_iZS7n9XCpJgpYXpUI5bZ_tsrll6HaxcEF7uyqBkHmVjWb5AuSK5yiI9lnBOYVez1rnozKzsA=w811-h608-no" alt="Card image">
+  <div class="card-img-overlay">
+   
+    </div>
+  </div>
 
-  <!-- The expanding image container -->
-        <div class="container">
-  <!-- Close the image -->
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 
-  <!-- Expanded image -->
-        <img id="expandedImg" style="width:90%">
 
-  <!-- Image text -->
-        <div id="imgtext"></div>
-        </div>
-        <script>
-function myFunction(imgs) {
-  var expandImg = document.getElementById("expandedImg");
-  var imgText = document.getElementById("imgtext");
-  expandImg.src = imgs.src;
-  imgText.innerHTML = imgs.alt;
-  expandImg.parentElement.style.display = "block";
-}
-</script>
+
+
+  
+<!--<div class="card" style="height:500px">-->
+  <!--<div class="card card-accent-primary mb-3" style="max-width: 40rem;">-->
+  <!--<div class="card border-secondary mb-3" style="max-width: 40rem;">-->  
+  <div class="card bg-light" >
+    
+  <img class="card-img-top" src="https://lh3.googleusercontent.com/I6DksiacVIRoFZVW9g9NE2Tozqci4QaFbILjKG7MC4lfWk6kS8BF3YWqNx_4oaQRL7M3x5nYVWYmwWiHshfH4LXLNMa8yxAS_jVR9C9RPljWY0bFm6GBk7Lb1B3G9x3h86_KfU6DsDibTa-my6lyu5E0e9NO4nPFJqN9j2owdO99xw-hvFjZRFur52uVsZHP6JkA7elcJqRLiG-gQMQ-dYqFa1phk7KUVDy-TNFuzCPlKB41HxZoTGjq05RBP5S1K3Kaidkre0DQ-BMsMt22xybpg2dteu-0wjjgShXuaQPAhMiHC4t-b-4WWnPTcnC9ZN4QBWCalr_c3bYoxzpRS_d_DAMblNdnQ18zhfr3kWlwh9TsVuIC8hAXpYNtTHrsNxVgMj8vxuapw8x3KDQaGDO8YEYjGQgsBctPDOf3DypXUiX-fVhgxvpiu2bZrOVgQTK7heg5yYW8PJqcNwQbF8ksldE0RjyQKRV3fuLBHuU3v5Xc9RykI2JKOUbnXC9Two7GMQpkx3xgW2DHAX3vY7FjzvSbyfXnAgSgdS9piiWOfj-2suPlbRMFfIoRalh2H3uTM6hpEVJ7SiWeBk-ieLauPEkFpd5twtjuYAc548U9X-DegpIq5GAvq-BAsrZ7AC4jBei4ZJlOxHq8d_2D_Zzt26tWCfw=w811-h608-no" alt="Card image" >
+
+
+  <div class="card-img-overlay">
+  
+    
+   </div>
+    </div>
+  </div>
+
+
+        
+
+
+
 
  <div><h5>My first euro trip in first christmas </h5> </div>
         <div>
