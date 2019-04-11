@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Salekin's Blog</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -161,8 +161,43 @@ transition:.5s ease;
   filter: sepia(0);
 }
 
+.shine{
+  position: relative;
+}
 
+.shine::before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
 
+}
+
+.shine:hover:before {
+
+   -webkit-animation: shine .75s;
+  animation: shine .75s;
+
+}
+
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
 
 
 
@@ -518,10 +553,140 @@ transition:.5s ease;
 
 <div><h5>Colors of Grimtstad,Norway. </h5> </div>
 <div>
-  <p>Grimstad is a beautiful little city.My campus was in grimstad , so as the dorm, where i lived. The city had about twenty thousand people, of which half of them are university students </p>
+  <p>Grimstad is a beautiful little city.My campus was in grimstad , so as the dorm, where i lived. The city had about twenty thousand people, of which half of them are university students. That felt like a huge transition from living in a city (Dhaka) of 20 million to shifting to a city of 20 thousand people. It was a nice and quiet city for study. Not muh going on. Some times it felt like i am disconnected with the world. But it had its own charms.   </p>
+
+</div>
+
+
+<div class="card-group">
+   <div class="col-md-4">
+  <div class="card bg-light" >
+    
+      <div class="card shadow" width="20rem">
+      <div class="shine">
+  <img class="card-img-top" src="https://lh3.googleusercontent.com/6NTIby_VeKdWlLTWCjSoqiZrPz-kNLxXzc6XV7Y7QNX-G7Ow5v69LZotfuyql5_qX0Z9CBsEgW4-_niwydTBP5yf3WzCB15g5t5Xn7N_F3TG3v4nkyJ9ZPrZfT4p3HAI2kGHjHBICIIguY90GYYRgeBnjhFaf-EAoP9V3NmM0FYrFG0mAlO7QmMMFPk6lFsR7PRf2gm1tRVc4DUi6Y4z5pvsBdnrmPMXEMw1_CPmvOJkAmRjouaUb5tkPshWKIaee3grJgSzDRPZvhuPSBEP6LTD2TivsSypqTIoEg2U21te9tB13_sNGOPeviFV49vG26JtrMcIE1bbJYpUNP-lRfnJwdWRt9-kXkRTAkMXMcfMiMv6UzaBgJcLv3ulxpjeZGIga2tG30CXZH5TGw4NT6KVjEMKxMrbiaBhw3fN32tFVo0IksZX8kfo94HjwuJas7NcnhGdDBhb-IDg87KdFSy366nHVaW8Tdam9Qjcg5FA8KzBcx-ZWsrlQ4L1m6KFeDz3Io_xT5Y1yr34CnbUDlBHN0zWVPOCLvT-euBtlik0US_rkwPKtObZ33NdfJ-4gz8bS_hJ0KTEP90_aAmfrJcloL22fAXBnyWS8OxQ5Q4kQNyRK9DHKBivq_02_pzDufpZSDMEY8eI5WP0FXkYfkCMoIMuW3w=w912-h608-no" alt="Card image">
+  
+  
+</div>
+    </div>
+  </div>
+</div>
+
+    <div class="col-md-4">
+<div class="card bg-light" >
+   
+      <div class="card shadow" width="20rem">
+      <div class="shine">
+  <img class="card-img-top" src="https://lh3.googleusercontent.com/Wl9awNM82PfUqwsTwU43jw4z06Ummrxxf-Cenq-qUISmM9JpVqa4X-DkpM0oWOolzfIo0yM6pba6oyfpF2KZ9KqNPjlY2jygLjgR_0y09eE5EVfFZ_auHjkmyCu40QuFtpLD7o4T9QF73rWxZrniN2paUucohHsDfesC8ZQErshCHuS8I8pYWkr3W2O7xizqeacJzj-6mlqKQ3g1rPyIE_73FpyI7DOYGB99Pk4eNxqE8orVzDCB0aTG9QgtSqAP9Qv88ZO9Sl631ydRsKGxLd2mytCAK8GtauszjF9sVXKv8bHg54BcfI5G6tQFa0JhwmC_ipwTABA4yxZm6afKsrWu0nod2n7_rLQUTmfnRAehSa54rUB72wLGFx9NYlr4h0g4wHVfvZ2TwPPv0mfGlx1QinFUuCKNCDSSYotH7xhnRpe9tq6w3S3HANBjKONeW477AO5cl0G1pJRndyLnEPi5IkUFrBisVaaM7KAi94RLzR0jJIqmsi2TMarJXJiiQC6i--6dJLEGG_gC8XICP8-KRsvxXooQZWX5yGnNGWCv5q3USBjJuwbAfeBUplflqxuRV1DaF1FyLtdYqHwNU82I2hDZmJIBLztaT-IoCO_8ksEc-1vXWZUlWCwXElaNHognI4a48Ptb_uKzvDLo9aGUcdmACtw=w811-h608-no" alt="Card image">
+  
+  
+</div>
+    </div>
+    </div>
+</div>
+
+    <div class="col-md-4">
+    <div class="card bg-light" >
+    
+   
+      <div class="card shadow" width="20rem">
+      <div class="shine">
+  <img class="card-img-top" src="https://lh3.googleusercontent.com/gAETApf3zSPjJlhv9jysnzwHVBnjK18kftHUbu0YERz_s_6BpcwV4iQGbNFgZVepf1qOYcq34G-yO526pm54B2SBaxALd7EKakoER4MjxVfk74_o2u5SK3Uy8_nDuxE497fjI_G7vI0FekE9tQM5Ax6Wnzr3IAzQmWSPOGKrYngflqrLjEXKvxoT9LHg-xxfWQGfOF7ZDBucQAtyUAzaxtqb4_4mQ7SaKsXh0MudKr3CoNjwUN73LXGOJiXc53lxAHhQALKev00gI7b5alpo3VsslTqXRKsB4It6A57BCM0GRM3tt8RI74QpErCSAf0JpKvgVO4ORGD9iOihQZOiYRkeQRVsPENUJROymZ4Gi45UDuOrGTHN5YDTRn51FETDkWUlMp4dz-XffexM-xwrfu6JeysLSJ_NsgwVZFzE9fHaE5MlDTOJhRTVdxox2JLW-dj-1kUFBN4vpYVbBm__1YoJ4U2Pt4i4aFPJ1dl1y83gNXB58qUxa5p-ma9Q1MMSUrkcwSPzuqYzGjIVN-cV2eyUTnPH1fohwbScPOv4CxhGJUVZxiE_yVtCyU5AYmPF0R5Z3Zmu7dYY_eF_DUpn1uFV95uijoiGHWsgxL7urrJPqjtMEOG8pBpCIUn7yzHWnjn2dFR50Rz-h2VzMsQJdTNyPYlnhZw=w847-h608-no" alt="Card image">
+  
+  
+</div>
+    </div>
+  </div>
+</div>
+     
+     <div class="col-md-4">
+     <div class="card bg-light" >
+      
+      <div class="card shadow" width="20rem">
+        <div class="shine">
+      
+  <img class="card-img-top" src="https://lh3.googleusercontent.com/LPkbcNFTPOr7V4pMJWeLeC4-HeX4nbDgh-SYnOirtvsHsQdYUhqXlthEdZzUNK2S_-CtsIqtCLPMq0IaZXSahz3DN5ZovxgNEpGiuxizfQoJGdAfnfKIf8HkOD-cib8-1nVb-3JSswF8ziTTlw0nyEiLdnEGCMCjjSIPCx-BqZiJ2LP4E6kTjFpNwPiWEN1V_cg8nxKyEsK81vEO2KHgE_LtkE5PyDB2j1pytO1wzBQyjgX1OcPKARijvT024MaRvV1X6zNvWwhHYj6jqiFpFodMb4bVvgLEba2lR-mGN2agcdsEbO0uDGISgg8gCrwWqjy7NfrBMEXmJe-xM2X1knMPdaaE0w9pFhOARHR5CX0bXMv247q8iwtrmJZbqmvaNrCm5N_ckfs85pCkTB5apXZk0tbk-YhwYxDZUKggEIH66mO9liJCdFXyeHgzfQOxB6R9miCCdcMhOur5cTHQduHL9iufYPlmm4oSHh0UMC-eOqP1w74UGqPBxlKGp1oQXXNUK2Hn5PgdZ6wRYSZtNelj6AYpYQzN-__GWF_iaQlL5rXxazez6V1SFoVCdT8OcL5fupWnGpMd82NOffUaBo-UBhz991fz9wte6ZDgn7-c3_l_y4bPDIQ_FnUT9PUp6K6I4nADRpPX9idu2GCfGC-zaB8cQr8=w811-h608-no" alt="Card image">
+  
+  
+</div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="col-md-4">
+     <div class="card bg-light" >
+      
+      <div class="card shadow" width="20rem">
+        <div class="shine">
+      
+  <img class="card-img-top" src="https://lh3.googleusercontent.com/lHeUqlgYSQ78anEVOddAqRWov2t5VuXpnd9hVtiuhWVdLp637u1E3qx4WAWTE2hETEsjRnIzu0z7wAwrvIL68Er-6ZC5Hza5KBoWYitCIEuoYCgf60qWFzDJlu9PLaN-GN5L2CTTJieQQ7uTpWq7UTpdvvsbuz__tj1QtQ4vQoI557oek75NzVHkElZ8RsR0J391EuHXphIPUZ5Ol2XOTOglu2YEMTlWDowsJKie6x2ClHlVsjuWAjM8y1PSpUf0BOgcgCb6s3Pyk8FEZZOBVvWL43__fY4Grpho762qQ0AazewSNSS4fGddt-iY6SFGg0WUW11TcolxOkmTf3Chzpao4ZxQOMB4g4nmhbW0NNMUDRvcUm4y9EZRySOAciqOqGWDjYwGN3V4nu2fAyqiqdowxGBZOH7ywGqJdYX0Hmx1f923Ndrw22H7rkqR_ubRIkUAMNE4BrNeEF-nNxVeN_NUmsqr1niQC6cs12yufoTyi8WZkQxGYh0e5RINqqrZlOdn3wLWxpv4_nbzlIvHK0azzn0KdFqepS8WEUAaCP8l3ht3ZfYBSAp39YXhQGhI7xGsReEfAl8uOSpISRfhJzEXutP1hr1d2lkOL6Bgxl5TvfUBdobiOaH4dcBhCyATqWA-oRa-3GoXZKz4Skra6naT_n8WGEc=w811-h608-no" alt="Card image">
+</div>
+  
+  
+</div>
+    </div>
+  </div>
+
+
+<div class="col-md-4">
+     <div class="card bg-light" >
+      
+      <div class="card shadow" width="20rem">
+
+      <div class="shine">
+  <img class="card-img-top" src="https://lh3.googleusercontent.com/V2wQpk2N5wq-f6K_PhpF3giurqaOduGq0CM3YxhyZyJW8xgQ7234gGsowPkBAIDu4wLdznUo4awnBBWek_UjAZq0j-P2TRGwiNeQzdMEAST-lrTB1IDG_HxAWucEv5YmwLAfeTvTH-nq3oPG4CkiHPiK08OOtJrgOL0_wRyeUcfI20ggJFcIRz-t-FUiVPZXtofmze1UNiPuWB5JvcZrOnPjefOcHkS6BoQWCP3ZS7BMEuM_HckZ4ZUpJqrCLFO1hjAnjXELGeLXMW_pQCqWOrU_bBNPsSYrxbgnHtKYTLER-pIOXAL5MMRjnSKg2asEeswEQgadXOENvMLdcMwzJ4Ig8biephLwup5gs8r3VEohSCK9CThTO-UwfTgd9csC5RDFfHOc_7iCwyg_1GCAAaPIcXeYRSyhkWHSHspWcnXtQf2bYZe9_cESRX0f6nWefKwq31PBLqiR9ZL7yiXhrQOKJUmXzypX1I3eMco9r-JRfydwHVe2p1KiW9O71tRir59UAhs0m4eSvHIrzWq7--O3URervTts0vl9N424TvGrrfyS0NYvnr1rNNSUMsL1CaoaQNIBt8Kych9ELMAJdZoQCGbU3e0qgFAWK8T9KuT-vwek55pKfodbxPO-lDmOirPiub-dRDpAV3MmXrHhbY1Gg6Ox8g8=w811-h608-no" alt="Card image">
+  
+  </div>
+</div>
+    </div>
+  </div>
+
+
+<div class="col-md-4">
+     <div class="card bg-light" >
+      
+      <div class="card shadow" width="20rem">
+      <div class="shine">
+  <img class="card-img-top" src="https://lh3.googleusercontent.com/sGA6JLCSk2Hw6Prdc_AR2wfJsoiABRReXcOtnCt6i_Wqq20aM1NxLGsxFbCCm1IwxCANt2nGmpCwzBVxvsfzaTnHLsPcACc-6c1Tbeo41w_WDRon7udzCqWdWiTwHdig85I_JOLD1gNogPmbU4tHNozn2EI5xIfWyOHWADSpaQr2KAefBNYdqjQ3unLN75VV8oj7sZYERmhGM6Dt9BR9BIp5h6wG-nTBpQ3osI6gJk7w2sJTQGi6GU4Dior-mS20i4tRg9pBQ1laIPOz_3hAPxf68fbvbTWCP6BmqR-4Ho1t14dRox3NK7uhqCf-3RaVQtHdkSQkEn5vgz2yu1VOc3AgAjCcQxZO6DclLbnsW1wcNrKnuVGoNkG4ZMuQjLvvByCfzhJTfGFFyxCZlh095NSDup7_e6HkZL80R9ZMhiCWi7T5f2JghbAdhkQsrXyrptwuRzthO3nikZL9L042OyEGYY7Tq0bDcKk7Iw9Y2RqckzRLVekid28zmFnpKIXQXHz7ygPWVGqBQsscALzVclttfeCyBH45U6yZ4s2UMC4gmQs5pkLZ339xtz3Cbxpwajdk-5CgdZK17QGJTFL2PB_7wl9FFTLhF6kVZtzRecdY3XjpqZhwBHu5VZkxSwTN-bx7oHjXjDAYL3FBmgk84V2D_UMo-po=w811-h608-no" alt="Card image">
+  
+  </div>
+</div>
+    </div>
+  </div>
+
+
+  <div class="col-md-4">
+     <div class="card bg-light" >
+      
+      <div class="card shadow" width="20rem">
+        <div class="shine">
+      
+  <img class="card-img-top" src="https://lh3.googleusercontent.com/NLfjSAHL72WCko6TQa-tCRPgs5L5dFluqi_NDypv2cleZkaNfRVfGydwaMQVnuV27fbWqn7G-TSqnE003APNa0ZbJhKaGM3UXOO0VzQSDomk7IoVsOYG9c34_WQje92d-k6Wzpz8qb3yt6J326rLepBcMPGFICbfMkSETvi62gx0GlqjHO3yXqoV5wjPArMMJqshC3mF-8oq5sn9G8h124mk5PxBWOoPB6oZcz2NRUhJTvQSOFziSg9EY_yZ2Bm6grqiJnWVj6MYfL21OKK5stAuxKE9LUeTegTSw4UU2WlsJPOKpRUBlW8ZDmupPGFODJHPtvPPXqZgQrVRf0CFWsCLCJjhC8jVmZlu4hMI74JSMaGxOFPd8w3cLmLzI8VBSOWwvUWws_7B8GMloWY4-IyL40Em_hQdTjqsfM7Mw7o2h41HHLumTAzkHcdhIWv7kNyK3_vFtsBL2KR7xTqo8UopwuAI3AnFsk6kHUmvAUr6hxE5mXljTRyNHJogi1kXJkD6zqKX2-z5GEJqVAS9tnI5pS690zNhmA7uqBBU4YfDa0-848M9nTWg5v1luhvihXyLBVi4VOK36kI_ldnJBQUrLJEEmtR5lGPYMvC-3-dXOxvOjx0Y7GjN8Jog34z_0IpvuqvS3ev2l1xLl1Zu5XFcbts6p9w=w811-h608-no" alt="Card image">
+  
+  </div>
+</div>
+    </div>
+  </div>
 
 
 
+
+
+
+  <div class="col-md-4">
+<div class="card bg-light" >
+    
+      <div class="card shadow" width="20rem">
+      <div class="shine">
+  <img class="card-img-top" src="https://lh3.googleusercontent.com/JJsWNQAKJi0xTa5EwVZAkfHp9qR15D3rVpiMnriONu3uMQVurjupSqdL7U8pgCjDR7OnZzWFpLyq89286pBSREa6oezOYXUxYRkWNDNXrMKtmYF2YVvQeXB2UoRvt4YFNyUD0AG9RQN43tYdzmWJkbv36vIGRsgrvKI8L4HnVEtJSG_5CgNAYTYQBkmTGSvThYGOwOQX7V6WCOTmubT7kmpUe0Cb7MKMNFgL5kbK73XBRimHP_8NfjADxOt1u-gIgT3z6k0sS1UwpZc7DOjKVQaDTF0g2_VQUjcigmKoDS-E9ackUB0o3Jv6xpWkl1Fj3qdu37xmJkH_yWQ7RoC7olIORhK5ywkuoY_16md8dIo2bW1ENfghuJrHlpG7QUJgr1cNA6W7VYGoEmAvy5dpDXaHHbRbaT0R37MXPGSRARXOUONNfMrl1id3uGp1k_5lXg0HUyikD0416GIIhM46Aak2v2nNqt5Lkf5EQWaePrhavcfSXKenSScoxWVo032iOOhfjOXdnYqpvWKqRM_XMoCFIE-SdhDPJKzeg5Y2C0-RAodPfjXZWUvfnfw-EHHgkzZD-5asg-G3PgbZBX1zb2fSoeRXjowXpzcM_LyQgkuLgoVfhfx262pA0FSls7G8pj2PWb2dlkKqf4CtjoBoVmEyF_4u8W8=w811-h608-no" alt="Card image">
+  
+  
+</div>
+    </div>
+</div>
+</div>
+</div>
 
 
 </body>
