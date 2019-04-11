@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,24 +18,8 @@
   }
 
 
-  .glow {
-  font-size: 80px;
-  color: #fff;
-  text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
-}
+ 
 
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
-}
 
 
  h1{ font-family:sans-serif;
@@ -94,7 +79,7 @@
 /* The expanding image container (positioning is needed to position the close button and the text) */
 .container {
   display: inline-block;
-
+  overflow: hidden;
 }
 
 /* Expanding image text */
@@ -161,6 +146,17 @@ transition:.5s ease;
 
 }
 
+.effects img {
+  -webkit-filter: sepia(100%);
+  filter: sepia(100%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.effects:hover img {
+  -webkit-filter: sepia(0);
+  filter: sepia(0);
+}
 
 
 
@@ -353,7 +349,7 @@ transition:.5s ease;
   <div class="card bg-light" >
     
       <div class="card shadow" width="20rem">
-      <div class="img-fluid">  
+      <div class="effects">
   <img class="card-img-top" src="https://lh3.googleusercontent.com/s4VWX3Vj9RlUjTKTQI6CvKT0zBajPsjsI3_oLXMtZztxjx1ZbQbmhRJ-cUin8zpJhTpi4pZysBgna7whGRZGn5h_zQ0-48F90Vm2VMcpAzF95pA0ay6OeHhi14A537PSLtoO05iMKTqhEj4HLlMrqHPXD-A4iDEvAJHFkG65nQEg7nUIXK0wonesnNw7XtPLmIuiqHUY7VFgNI83Ku13V-FwpSwAnz2EG6yfGY4ErB6KkfFh7ff4sOsi6H3StnfCP8TOktkpTYhm23VnQlYFwUKYMVL5YWs5qg7JNxA5_MkrFarJ4GBa86f4a40qMND1BEcLeK5-yuj5NFoEFRAd0h-OqMuGWstp9Y0AVVyQdFx4by1lPNnKu_um2p9dxK8hh1dHDgvscMnsf542qW4MCMWEyUIa0soTv-Ux7A5ysVMBf42aHCozF9t1FkjIciDeP9v1Lt44zESgPDpk8M4ucyz9bZzwZUF1JitIOPtCnywIhmx4XJqd612x0tfut0zGbkyu1wmpshLKT9JykgD2JyaAJdLsn-bjeD9reXj4FaMCEPzZmTU29wfaV_xauVmYb7nGQjVUzoEHlVntuzimMnZUshBB_xWCOp0W5793z_SQQsueyRL3ll_z7siofeTWlYjg_E7VDx_YWK7tQXxoWJgxfAhUJiM=w811-h608-no" alt="Card image">
   
   </div>
@@ -368,7 +364,7 @@ transition:.5s ease;
 <!--<div class="card card-accent-primary mb-3" style="max-width: 40rem;">-->
 <div class="card bg-light" >
   <div class="card shadow" width="20rem">
-    <a href="#" class=" stretched-link">
+    <div class="effects">
   <img class="card-img-top" src="https://lh3.googleusercontent.com/lBWgCkeaUZ-O6L0sWiW-Rxaz5XQXkbtaQl3yCQ35aWRBkPqJXWNQgQJgJPGue575jNEqYr0EjNUlZNYyk7uKpfgajBy0SsN2wG5M8xQymKR52-wq4iqDb1AMMXtoshvMhYJiPQBc2gUoHwdOtW6Q_Pg1aTbOV-doYyG4vbWH86UwMOkMnGFHfHWTT-VyN7CcVHLIwQJQB3-G1uaK2dIhFWk-AUoy3I5e4haTwvNJSe5O9EenkZVc0orQvZQ6s1Zs8GZjtCl3IFdTmXTqHVD_giSuUbktSBZe2KtuI9xC771MOaWQG6_0F8u-Bu6cjH2vqYa6z0pTt_QptCznPgUb4s3hD9Exf386lJhNzOmGBdbuohf61Uw4bwaf7n4aCONGZI95zhnWf6KJoCBfCdhN20L04Of1gfEykgLLSWP5oBdLGDOMr2Kh68vUeGPf-gIIyiGznll6vhEHHEVCg3yiYsUeMmoUEUkHzQnEpQj85VsB885Jx15UMa8HUJpPbSTGqPiEqO94yTDlnuS0fGYPYXxEQFaCqQm08tdSF9fWuviVCZ9eZDuSnYy_6poqkFI-Q3yruhrKv9M5BZg_oEZN5L_iZS7n9XCpJgpYXpUI5bZ_tsrll6HaxcEF7uyqBkHmVjWb5AuSK5yiI9lnBOYVez1rnozKzsA=w811-h608-no" alt="Card image">
   </a>
   <div class="card-img-overlay">
@@ -376,6 +372,7 @@ transition:.5s ease;
    
     </div>
   </div>
+</div>
 </div>
 
 
@@ -388,6 +385,7 @@ transition:.5s ease;
   <!--<div class="card border-secondary mb-3" style="max-width: 40rem;">-->  
   <div class="card bg-light" >
     <div class="card shadow" width="20rem">
+      <div class="effects">
   <img class="card-img-top" src="https://lh3.googleusercontent.com/I6DksiacVIRoFZVW9g9NE2Tozqci4QaFbILjKG7MC4lfWk6kS8BF3YWqNx_4oaQRL7M3x5nYVWYmwWiHshfH4LXLNMa8yxAS_jVR9C9RPljWY0bFm6GBk7Lb1B3G9x3h86_KfU6DsDibTa-my6lyu5E0e9NO4nPFJqN9j2owdO99xw-hvFjZRFur52uVsZHP6JkA7elcJqRLiG-gQMQ-dYqFa1phk7KUVDy-TNFuzCPlKB41HxZoTGjq05RBP5S1K3Kaidkre0DQ-BMsMt22xybpg2dteu-0wjjgShXuaQPAhMiHC4t-b-4WWnPTcnC9ZN4QBWCalr_c3bYoxzpRS_d_DAMblNdnQ18zhfr3kWlwh9TsVuIC8hAXpYNtTHrsNxVgMj8vxuapw8x3KDQaGDO8YEYjGQgsBctPDOf3DypXUiX-fVhgxvpiu2bZrOVgQTK7heg5yYW8PJqcNwQbF8ksldE0RjyQKRV3fuLBHuU3v5Xc9RykI2JKOUbnXC9Two7GMQpkx3xgW2DHAX3vY7FjzvSbyfXnAgSgdS9piiWOfj-2suPlbRMFfIoRalh2H3uTM6hpEVJ7SiWeBk-ieLauPEkFpd5twtjuYAc548U9X-DegpIq5GAvq-BAsrZ7AC4jBei4ZJlOxHq8d_2D_Zzt26tWCfw=w811-h608-no" alt="Card image" >
 
 
@@ -399,7 +397,7 @@ transition:.5s ease;
   </div>
 
 </div>
-        
+</div>        
 
 
 
@@ -524,3 +522,4 @@ transition:.5s ease;
 
 </body>
 </html>
+
